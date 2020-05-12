@@ -1,0 +1,25 @@
+[package]
+name = "vl6180x"
+authors = ["ijager"]
+edition = "2018"
+description = "I2C driver for the VL6180X Proximity and ambient light sensing (ALS) module"
+# documentation = "https://docs.rs/vl6180x"
+keywords = ["embedded-hal-driver", "proximity", "distance", "sensor", "ambient light"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/devboard-io/vl6180x-rs"
+categories  = ["embedded", "hardware-support", "no-std"]
+version = "0.1.0"
+readme = "README.md"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+embedded-hal = "0.2.3"
+
+[dev-dependencies]
+cortex-m = "0.6.2"
+cortex-m-rt = "0.6.12"
+panic-halt = "0.2.0"
+
+[dev-dependencies.stm32g0xx-hal]
+features = ["stm32g07x", "rt"]
+version = "0.0.7"
